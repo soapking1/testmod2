@@ -1,0 +1,13 @@
+{
+  "item.testmod.zircon": "Zircon",
+  "item.testmod.raw_zircon": "raw_zircon",
+
+
+  "block.testmod.endstone_zircon_ore":"endstone Zircon Ore",
+  "block.testmod.zircon_block": "Block of Zircon",
+  "block.testmod.zircon_ore": "Zircon Ore",
+  "block.testmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+
+
+  "itemGroup.zircon_tab": "zircon_tab"
+}
