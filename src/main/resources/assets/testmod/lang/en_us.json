@@ -1,6 +1,11 @@
 {
   "item.testmod.zircon": "Zircon",
   "item.testmod.raw_zircon": "raw_zircon",
+  "item.testmod.zircon_helmet": "zircon Helmet",
+  "item.testmod.zircon_chestplate": "zircon Chestplate",
+  "item.testmod.zircon_leggings": "zircon Leggings",
+  "item.testmod.zircon_boots": "zircon Boots",
+  "item.testmod.zircon_sword": "zircon sword",
 
 
   "block.testmod.endstone_zircon_ore":"endstone Zircon Ore",
