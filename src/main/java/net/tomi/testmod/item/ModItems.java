@@ -1,5 +1,8 @@
 package net.tomi.testmod.item;
 
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,18 +19,18 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
             public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
-            public static final RegistryObject<Item> ZIRCON_SWORD = ITEMS.register("zircon_sword",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
-            public static final RegistryObject<Item> ZIRCON_HELMET = ITEMS.register("zircon_helmet",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
-            public static final RegistryObject<Item> ZIRCON_CHESTPLATE = ITEMS.register("zircon_chestplate",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
-            public static final RegistryObject<Item> ZIRCON_LEGGINGS = ITEMS.register("zircon_leggings",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
-            public static final RegistryObject<Item> ZIRCON_BOOTS = ITEMS.register("zircon_boots",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
 
+            public static final RegistryObject<ArmorItem> zircon_chesplate = ITEMS.register("zircon_chestplate",
+            () -> new ArmorItem(ArmorMaterials.CHAIN, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
 
+             public static final RegistryObject<ArmorItem> zircon_helmet = ITEMS.register("zircon_helmet",
+            () -> new ArmorItem(ArmorMaterials.CHAIN, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
+
+            public static final RegistryObject<ArmorItem> zircon_leggings = ITEMS.register("zircon_leggings",
+            () -> new ArmorItem(ArmorMaterials.CHAIN, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
+
+            public static final RegistryObject<ArmorItem> ZIRCON_BOOTS = ITEMS.register("zircon_boots",
+            () -> new ArmorItem(ArmorMaterials.CHAIN, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.ZIRCON_TAB)));
 
             public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
